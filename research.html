@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Research | Gabriel Charris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"><span>Gabriel Charris</span></a>
+
+        <ul class="nav-link">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <a href="https://www.linkedin.com/in/gabriel-charris-537762388/" target="_blank" rel="noopener" class="visit-btn">Visit LinkedIn</a>
+    </header>
+
+    <section class="detail">
+        <a href="index.html#projects" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to projects</a>
+
+        <span class="detail-tag">Project</span>
+        <h1>Independent Research: Bridge Material vs. Condition</h1>
+
+        <div class="detail-meta">
+            <span><i class="fa-solid fa-trophy"></i>SHPE 2026 STEM Research Competition</span>
+            <span><i class="fa-solid fa-database"></i>FHWA National Bridge Inventory, 2025</span>
+        </div>
+
+        <div class="detail-body">
+            <p>I studied 11,680 Florida bridges to see if a bridge's material relates to its condition.</p>
+            <ul>
+                <li>Analyzed Florida's 2025 FHWA National Bridge Inventory dataset to evaluate the relationship between bridge material type and structural condition.</li>
+                <li>Applied chi-square statistical testing to identify significant differences in poor-condition rates across materials.</li>
+                <li>Steel bridges had the highest poor-condition rate (7.5%), and prestressed concrete had the lowest (1.4%).</li>
+                <li>The steel gap is regional: 22% of steel bridges in Northwest Florida are rated Poor, against 2.5% in the rest of the state.</li>
+            </ul>
+        </div>
+
+        <div class="downloads">
+            <a href="files/bridge-research-abstract.pdf" target="_blank" rel="noopener" class="btn"><i class="fa-solid fa-file-lines"></i> Read the abstract</a>
+            <a href="files/bridge-research-poster.pdf" target="_blank" rel="noopener" class="btn"><i class="fa-solid fa-file-image"></i> View the poster</a>
+        </div>
+
+        <h2>Results</h2>
+        <div class="gallery">
+            <figure class="fit wide">
+                <img src="CHart SHPE.jpg" alt="Chart of Florida bridge condition by material">
+                <figcaption>Poor-condition rate by bridge material, 11,680 Florida bridges</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <div class="lightbox">
+        <button class="close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <button class="prev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+        <img src="" alt="">
+        <button class="next" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <p class="copyright">© All Rights Reserved | Gabriel Charris</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>

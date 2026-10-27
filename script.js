@@ -14,7 +14,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 const contactForm = document.querySelector('#contact-form');
 const formStatus = document.querySelector('#form-status');
 
-contactForm.onsubmit = async (event) => {
+if (contactForm) contactForm.onsubmit = async (event) => {
     event.preventDefault();
 
     if (contactForm.action.includes('YOUR_FORM_ID')) {
