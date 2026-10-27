@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
     list-style: none;
 }
+body{
+    background-color: white;
+    color: black;
+}
 
 header{
     position: fixed;
@@ -263,24 +267,64 @@ section{
     gap: 2rem;
     margin-top: 5rem;
 }
-.input-box input{
-    border: 2px solid black;
-    border-radius: 3rem;
-    padding: 2rem 8rem;
-    font-size: 3rem;
-}
-.input-box input::placeholder{
-    font-size: 3rem;
+.contact-intro{
+    max-width: 36rem;
+    margin-top: -2rem;
+    opacity: 0.8;
 }
 .input{
     position: relative;
+    width: 100%;
+    max-width: 36rem;
 }
 .input i{
     position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%,-50%);
-    font-size: 4rem;
+    top: 1.3rem;
+    left: 1.5rem;
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+.input input,
+.input textarea{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem 1rem 3.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+.input textarea{
+    resize: vertical;
+    min-height: 10rem;
+}
+.input input:focus,
+.input textarea:focus{
+    border-color: rgb(0,157,255);
+}
+.hidden-field{
+    display: none;
+}
+.input-box button.btn{
+    background: none;
+    font-size: 1rem;
+}
+.input-box button.btn:hover{
+    background-color: black;
+}
+.input-box button.btn:disabled{
+    opacity: 0.5;
+    cursor: wait;
+}
+.form-status{
+    min-height: 1.5rem;
+    font-weight: 500;
+}
+.form-status.success{
+    color: rgb(0,140,70);
+}
+.form-status.error{
+    color: rgb(200,30,30);
 }
 
 footer{
@@ -318,16 +362,6 @@ footer ul li a{
     .experience-info{
         flex-direction: column;
     }
-    .input-box input{
-        padding: 2rem 5rem;
-        font-size: 2.5rem;
-    }
-    .input input::placeholder{
-        font-size: 2.5rem;
-    }
-    .input-box i{
-        font-size: 2.5rem;
-    }
 }
 @media(max-width:768px){
     header{
@@ -342,16 +376,6 @@ footer ul li a{
     }
     .about-container{
         flex-direction: column;
-    }
-    .input-box input{
-        padding: 1rem 2rem;
-        font-size: 1.8rem;
-    }
-    .input-box input::placeholder{
-        font-size: 1.5rem;
-    }
-    .input-box i{
-        display: none;
     }
     .grid{
         grid-template-columns: repeat(1,1fr);
@@ -399,14 +423,6 @@ footer ul li a{
     }
     .about-container img{
         width: 80vw;
-    }
-    .input-box input{
-        padding: 0.5rem 3rem;
-        width: 80%;
-        font-size: 1.5rem;
-    }
-    .input-box input::placeholder{
-        font-size: 1.5rem;
     }
     footer ul{
         gap: 1rem;

@@ -52,7 +52,7 @@
 
                 <div class="btn-group">
                   <a href="Gabriel_Charris_Resume.pdf" target="_blank" rel="noopener" class="btn">Download CV</a>
-                  <div class="btn">Contact</div>
+                  <a href="#contact" class="btn">Contact</a>
                 </div>
 
                 <div class="socials">
@@ -148,17 +148,30 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="input-box">
+        <form class="input-box" id="contact-form" action="https://formspree.io/f/xgaaarjg" method="POST">
             <h2 class="section-title">Contact Me</h2>
+            <p class="contact-intro">Have a question or an opportunity? Send me a message and I'll get back to you.</p>
 
             <div class="input">
-                <input type="text" placeholder="example@email.com">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="name" placeholder="Your name" required>
             </div>
 
-            <div class="btn">Submit</div>
+            <div class="input">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" placeholder="example@email.com" required>
+            </div>
 
-        </div>
+            <div class="input">
+                <i class="fa-solid fa-message"></i>
+                <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+            </div>
+
+            <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off">
+
+            <button type="submit" class="btn">Send Message</button>
+            <p class="form-status" id="form-status" role="status"></p>
+        </form>
     </section>
 
     <footer>
